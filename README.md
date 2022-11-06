@@ -22,12 +22,12 @@ You can create your personalized list of packages.
 - It is very simple, in the lists folder you have to create a TXT file with inside the packages  to uninstall, one under the other like this:
 
 ```
-# List of papackages
-com.google.android.apps.docs
+# Comment
+com.google.android.apps.docs #Comment
 com.google.android.apps.fitness
 com.google.android.youtube
 ```
-You can use "#" in front of a line for comments.
+You can use "#" in front of a row or after the name of a package to comment.
 
 >In the lists folder there is an example file for Realme phones, i created it from a [post](https://www.reddit.com/r/Realme/comments/w12bbk/realme_rui_20_rui_30_debloat_list/found) on reddit 
 ## Running the script
