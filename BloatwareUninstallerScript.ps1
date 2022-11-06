@@ -38,10 +38,10 @@ do{
 	Write-Host "1. " -NoNewline -ForegroundColor Magenta 
 	Write-Host "Enter the name of the list" #Manual insertion of the list with or without extension
 	Write-Host "2. " -NoNewline -ForegroundColor Magenta
-	Write-Host "Choose the list from the browsing window" #GUI insertion of the list 
+	Write-Host "Choose the list from a file explorer window" #GUI insertion of the list 
 	Write-Host "0. " -NoNewline -ForegroundColor Magenta
 	Write-Host "Exit" #Script exit
-	$choice = Read-Host "Number of the option: " #Option input
+	$choice = Read-Host "Number of the option" #Option input
 	
 	#Switch menu
 	switch($choice){
@@ -70,11 +70,11 @@ do{
 			$listpath = get-filename($listdirpath) #Takes the path of the list, GUI
 			#If the list not exist or invalid extension: error, else uninstall the packages
 			#Se la lista non esesiste o ha l'estensione sbagliata da erroe altrimenti esegue l'eliminare dei pacchetti
-			if(($listname -eq $null) -or (-not ($listname | Select-String -Pattern $fileextension))){
+			if(($listpath -eq $null) -or (-not ($listpath | Select-String -Pattern $fileextension))){
 				Write-Host "Invalid list"  -ForegroundColor DarkRed -BackgroundColor Black
 			}
 			else{
-				Start-Uninstall($listname) #Uninstall
+				Start-Uninstall($listpath) #Uninstall
 			}
 			;Break
 		}
@@ -91,5 +91,3 @@ do{
 
 
 Read-Host "Press any ENTER to continue..." 
-#$Procs = .\adb shell "pm list packages -f | sed -e s/.*=// | sort"
-#Out-File -FilePath 'D:\DIYTools\Rimozione Bloatware Android\Liste\power.txt' -InputObject $Procs
