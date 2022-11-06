@@ -1,0 +1,84 @@
+#Facebook bloat:
+com.facebook.appmanager
+com.faceook.services
+com.facebook.system
+#In some regions there's a fourth Facebook package with "katana" in it
+
+
+#Other bloat:
+com.daemon.shelper #[runs in background, no issues without it]
+com.netflix.partner.activation #[not needed even if you use Netflix]
+com.rongcard.eidapi
+com.ses.entitlement.o2
+com.ted.number
+com.tencent.soter.soterserver
+com.wapi.wapicertmanage
+
+
+#Realme bloat:
+com.heytap.accessory #Quick Device Connect [heavily drains battery]
+com.heytap.mcsSystem #Messages [I disabled this, didn't remove it]
+com.heytap.music #Music
+com.heytap.usercenter #My Realme [needed if you want the theme store/ heytap account]
+com.realme.movieshot #Combined Captions 
+com.realme.securitycheck #Security Analysis [this forcefully scans apps before installing in some regions, even from the store]
+com.realme.wellbeing #Sleep Capsule
+
+
+#Oppo bloat:
+com.oppo.opperationManual #User Guide
+com.oppo.quicksearchbox #Search
+com.oppoex.afterservice After-Sale Service
+
+
+#ColorOS bloat:
+com.coloros.activation #E-warranty card
+com.coloros.assistantscreen #Smart Assistant [needed if you want the shelf on home screen]
+com.coloros.childrenspace #Kid Space
+com.coloros.floatassistant #Assistive Ball
+com.coloros.focusmode #Focus Mode 
+com.coloros.karaoke #In-ear Monitoring
+com.coloros.scenemode #Simple Mode 
+com.coloros.sceneservice #Smart Services [needed if you want the shelf on home screen]
+com.coloros.securepay #Payment Protection 
+com.coloros.smartdrive #Smart Driving
+com.coloros.smartsidebar #Smart Sidebar
+com.coloros.video #Video
+com.coloros.weather2 #Weather [the app not the service]
+
+
+#Oplus bloat:
+com.oplus.apprecover #Recover Uninstalled System Apps 
+com.oplus.athena #Athena [this package kills background processes; removing it will solve notification delay issues but disable the virtual ram and 'close all' button in the 'recent apps' page, removing it is highly recommended]
+com.oplus.atlas #Atlas Service
+com.oplus.blacklistapp #Block & Filter
+com.oplus.cosa #App Enhancement Services [needed for Gamespace]
+com.oplus.crashbox #Crash Box [runs in background, no issues without it]
+com.oplus.games #Games [needed for Gamespace]
+com.oplus.lfeh #Oplus LFEHer [needed for Gamespace]
+com.oplus.logkit #Feedback
+com.oplus.pay #Secure Payment
+com.oplus.securitykeyboard #Secure Keyboard
+com.oplus.sos #Emergency SOS [runs in background] 
+com.oplus.statistics.rom #User Experience Program [runs in background]
+com.oplus.stdid #StdID [needed for Gamespace]
+com.oplus.synergy #Hey Synergy [needed for PC Connect & Screen Cast]
+
+
+#Android/Google bloat:
+com.android.chrome #Chrome [heavily drains battery]
+com.android.contacts #Contacts [the AOSP app not Google's]
+com.android.hotwordenrollment.okgoogle #Google Assistant
+com.google.android.googlequicksearch #Google App
+com.android.managedprovisioning #Work Setup [used for the work profile]
+com.android.traceur #System Tracing [this is a logging tool for devs]
+com.google.android.accessibility.soundamplifier #Sound Amplifier
+com.google.android.apps.nbu.files #Files by Google 
+com.google.android.apps.wellbeing #Digital Wellbeing
+com.google.android.feedback #Market Feedback Agent
+com.google.android.gm #Gmail
+com.google.android.gms.location.history #Google Location History [found it running in background, even when location history is disabled] 
+com.google.android.marvin.talkback #Android Accessibility Suite [accessibility settings still work fine without it]
+com.google.android.projection.gearhead #Android Auto
+com.google.ar.core #AR Core
+com.google.android.youtube #YouTube
