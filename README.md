@@ -29,7 +29,7 @@ com.google.android.youtube
 ```
 You can use "#" in front of a line for comments.
 
->In the lists folder there is an example file for Realme phones, i created it from a post found on reddit 
+>In the lists folder there is an example file for Realme phones, i created it from a [post](https://www.reddit.com/r/Realme/comments/w12bbk/realme_rui_20_rui_30_debloat_list/found) on reddit 
 ## Running the script
 It is very easy to use.
 
@@ -41,6 +41,7 @@ When the script starts, a menu is displayed, choose an option, enter the list an
 2. Graphically insert the list via a file explorer window
 
 ## Screenshots
+![Screenshot1](https://i.imgur.com/axPIwbOl.png "Screenshot1")
 
 ## License
 This scipt is open source
