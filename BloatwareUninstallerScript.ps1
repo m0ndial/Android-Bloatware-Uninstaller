@@ -11,16 +11,22 @@ function Get-FileName($initialDirectory){
 }
 #Uninstall the packages on the list
 function Remove-Commet($comment){
-	return $comment -replace "#.*" #Delete # and all the characters after
+	$nocomment = $comment -replace "/#.*#/" #Delete text between /# and #/
+	$nocomment = $nocomment -replace "#.*" #Delete # and all the characters after
+	return $nocomment
+	
 	
 }
 function Start-Uninstall($name){
 	Write-Host "`r"
 	$file = New-Object System.IO.StreamReader($name) #List of packages to uninstall
 	while( ($line = $file.readline()) -ne $null){ #It's repeated until the end of the packages
-		$line = Remove-Commet($line) #String without comments
-		if($line.Length -ne 0){ #If the string did not have a comment uninstall the packaget
-			Invoke-Expression ($tool + $line) #Run the uninstall process
+		#If the line is empty skip it, else remove comments
+		if($line.Length -ne 0){
+			$line = Remove-Commet($line) #String without comments
+			if($line.Length -ne 0){ #If the line is empty skip it, else remove package
+				Invoke-Expression ($tool + $line) #Run the uninstall process
+			}
 		}
 	}
 	$file.Close()
