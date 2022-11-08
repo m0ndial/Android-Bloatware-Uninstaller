@@ -24,7 +24,7 @@ You can create your personalized list of packages.
 ```
 # Comment
 com.google.android.apps.docs #Comment
-com.google.android.apps.fitness
+/#Comment#/com.google.android.apps.fitness
 com.google.android.youtube
 ```
 You can use "#" in front of a row or after the name of a package to comment.
