@@ -27,7 +27,7 @@ com.google.android.apps.docs #Comment
 /#Comment#/com.google.android.apps.fitness
 com.google.android.youtube
 ```
-You can use "#" in front of a row or after the name of a package to comment.
+You can use **"#"** in front of a row or after the name of a package to comment ro **"/# #/"** to isolate a comment.
 
 >In the lists folder there is an example file for Realme phones, i created it from a [post](https://www.reddit.com/r/Realme/comments/w12bbk/realme_rui_20_rui_30_debloat_list/found) on reddit 
 ## Running the script
