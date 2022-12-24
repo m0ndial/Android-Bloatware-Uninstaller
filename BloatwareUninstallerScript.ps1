@@ -33,7 +33,7 @@ function Start-Uninstall($name){
 }
 #Important Variables
 $tooldir = "platform-tools\" #Path of the tool
-$tool = '.\adb.exe uninstall ' #Command for executing the tool
+$tool = '.\adb shell pm uninstall --user 0 ' #Command for executing the tool
 $listdirpath = $PSScriptRoot+"\Lists\" #Path of the lists directory
 $fileextension = ".txt" #Extension of lists
 
