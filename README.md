@@ -1,6 +1,6 @@
-# ADB Bloatware Uninstaller Script
+# Android Bloatware Uninstaller
 
-ADBBloatwareUninstallerScript is a simple Powershell script that helps you uninstall system apps. It is easy to use as well as customise.
+Bloatware Uninstaller Script is a simple Powershell script that helps you uninstall system apps. It is easy to use as well as customise.
 
  - You can create your personalized list of packages to uninstall!
  - Compatible with Windows.
